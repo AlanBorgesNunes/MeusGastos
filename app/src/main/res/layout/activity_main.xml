@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/verdeMedio"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="80"
+            android:layout_height="wrap_content"
+            android:text="MInhas Despesas"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/btn_mais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_add_24"
+            android:layout_gravity="center"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_menu_24"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/verdeMedio"
+        android:elevation="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_mes_anterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_arrow_back_ios_24"/>
+
+
+        <TextView
+            android:id="@+id/mes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Novembro/2023"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="30dp"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/btn_mes_seguinte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foreground="?selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_arrow_forward_ios_24"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100"
+            tools:listitem="@layout/item_gastos"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/verdeEscuro">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="80"
+                    android:text="Total a pagar"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:text="R$700,00"
+                    android:layout_marginEnd="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="80"
+                    android:text="Saldo a pagar"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:text="R$700,00"
+                    android:layout_marginEnd="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    
+
+</LinearLayout>

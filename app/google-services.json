@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "501161963821",
+    "project_id": "minhas-despesas-cceda",
+    "storage_bucket": "minhas-despesas-cceda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501161963821:android:3a500509ed3d75249263a4",
+        "android_client_info": {
+          "package_name": "com.app.meusgastos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoiMKx0G-VRAfwWa3pOLyiE1bYHoKn0pM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
